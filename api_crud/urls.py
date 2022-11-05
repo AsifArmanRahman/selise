@@ -5,5 +5,6 @@ from django.urls import include, path
 # urls
 urlpatterns = [
     path('api/v1/movies/', include('movies.urls')),
+    path('api/v1/auth/', include('authentication.urls')), # 2nd bug
     path('admin/', admin.site.urls),
 ]
